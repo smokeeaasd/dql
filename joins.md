@@ -8,31 +8,31 @@ Os `JOINS` em SQL são utilizados para combinar linhas de duas ou mais tabelas c
 
 O `INNER JOIN` retorna apenas as linhas que têm correspondência em ambas as tabelas.
 
-´´´sql
+```sql
 SELECT clientes.nome, pedidos.data
 FROM clientes
 INNER JOIN pedidos ON clientes.id = pedidos.cliente_id;
-´´´
+```
 
 ### 2. LEFT JOIN
 
 O `LEFT JOIN` retorna todas as linhas da tabela à esquerda e as linhas correspondentes da tabela à direita. Se não houver correspondência, os resultados da tabela da direita serão `NULL`.
 
-´´´sql
+```sql
 SELECT clientes.nome, pedidos.data
 FROM clientes
 LEFT JOIN pedidos ON clientes.id = pedidos.cliente_id;
-´´´
+```
 
 ### 3. RIGHT JOIN
 
 O `RIGHT JOIN` é o oposto do `LEFT JOIN`. Ele retorna todas as linhas da tabela à direita e as correspondências da tabela à esquerda. Se não houver correspondência, os resultados da tabela da esquerda serão `NULL`.
 
-´´´sql
+```sql
 SELECT clientes.nome, pedidos.data
 FROM clientes
 RIGHT JOIN pedidos ON clientes.id = pedidos.cliente_id;
-´´´
+```
 
 ## Considerações Finais
 
